@@ -1,0 +1,99 @@
+/* Mengatur font dasar dan reset margin */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7f9; /* Warna latar belakang abu-abu muda seperti contoh */
+    color: #333;
+}
+
+/* Header Biru di bagian atas */
+.main-header {
+    background-color: #007BFF; /* Biru cerah */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.main-header p {
+    margin: 8px 0 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Area konten utama */
+.content-area {
+    padding: 30px 15px;
+}
+
+/* Kartu informasi putih */
+.info-card {
+    max-width: 800px;
+    margin: 0 auto; /* Menengahkan kartu */
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Efek bayangan halus */
+}
+
+.info-card h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #0056b3; /* Biru lebih gelap untuk judul */
+}
+
+.info-card img {
+    width: 100%; /* Gambar mengisi lebar kartu */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Sudut gambar sedikit melengkung */
+    margin-bottom: 10px;
+}
+
+.info-card .caption {
+    font-style: italic;
+    color: #6c757d; /* Warna abu-abu untuk caption */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.info-card .description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Tombol Aksi (Call to Action) */
+.info-card .button {
+    display: inline-block;
+    background-color: #28a745; /* Warna hijau seperti contoh */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.info-card .button:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat disentuh mouse */
+}
+
+/* Penyesuaian untuk layar kecil (Mobile) */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2em;
+    }
+    .info-card {
+        padding: 20px;
+    }
+    .info-card h2 {
+        font-size: 1.6em;
+    }
+}
