@@ -2,28 +2,37 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
-    background-color: #f4f7f9; /* Warna latar belakang abu-abu muda seperti contoh */
+    background-color: #f4f7f9;
     color: #333;
 }
 
-/* Header Biru di bagian atas */
-.main-header {
-    background-color: #007BFF; /* Biru cerah */
+/* Header Utama dengan Gambar Latar */
+.hero-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('jembatan-suramadu.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    padding: 40px 20px;
+    padding: 100px 20px;
     text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.main-header h1 {
+.hero-header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.main-header p {
+.hero-header p {
     margin: 8px 0 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
     opacity: 0.9;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Area konten utama */
@@ -34,30 +43,36 @@ body {
 /* Kartu informasi putih */
 .info-card {
     max-width: 800px;
-    margin: 0 auto; /* Menengahkan kartu */
+    margin: 0 auto;
     background-color: white;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Efek bayangan halus */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
 }
 
 .info-card h2 {
     margin-top: 0;
     font-size: 2em;
-    color: #0056b3; /* Biru lebih gelap untuk judul */
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* STYLE UNTUK GAMBAR DI DALAM KARTU (INI PENTING) */
 .info-card img {
-    width: 100%; /* Gambar mengisi lebar kartu */
+    width: 100%;
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Sudut gambar sedikit melengkung */
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
 .info-card .caption {
     font-style: italic;
-    color: #6c757d; /* Warna abu-abu untuk caption */
+    color: #6c757d;
     text-align: center;
     margin-bottom: 25px;
     font-size: 0.9em;
@@ -67,12 +82,15 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 /* Tombol Aksi (Call to Action) */
 .info-card .button {
-    display: inline-block;
-    background-color: #28a745; /* Warna hijau seperti contoh */
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #28a745;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -82,16 +100,24 @@ body {
 }
 
 .info-card .button:hover {
-    background-color: #218838; /* Warna hijau lebih gelap saat disentuh mouse */
+    background-color: #218838;
 }
 
 /* Penyesuaian untuk layar kecil (Mobile) */
 @media (max-width: 768px) {
-    .main-header h1 {
-        font-size: 2em;
+    .hero-header {
+        padding: 80px 20px;
+        min-height: 300px;
+    }
+    .hero-header h1 {
+        font-size: 2.2em;
+    }
+    .hero-header p {
+        font-size: 1.1em;
     }
     .info-card {
         padding: 20px;
+        margin-top: -40px;
     }
     .info-card h2 {
         font-size: 1.6em;
