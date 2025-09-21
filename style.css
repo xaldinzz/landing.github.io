@@ -1,4 +1,4 @@
-/* Mengatur font dasar dan reset margin */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,6 @@ body {
     color: #333;
 }
 
-/* Header Utama dengan Gambar Latar */
 .hero-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('jembatan-suramadu.webp');
     background-size: cover;
@@ -35,12 +34,10 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Area konten utama */
 .content-area {
     padding: 30px 15px;
 }
 
-/* Kartu informasi putih */
 .info-card {
     max-width: 800px;
     margin: 0 auto;
@@ -61,7 +58,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* STYLE UNTUK GAMBAR DI DALAM KARTU (INI PENTING) */
 .info-card img {
     width: 100%;
     max-width: 100%;
@@ -85,7 +81,6 @@ body {
     text-align: justify;
 }
 
-/* Tombol Aksi (Call to Action) */
 .info-card .button {
     display: block;
     width: fit-content;
@@ -102,8 +97,6 @@ body {
 .info-card .button:hover {
     background-color: #218838;
 }
-
-/* Penyesuaian untuk layar kecil (Mobile) */
 @media (max-width: 768px) {
     .hero-header {
         padding: 80px 20px;
